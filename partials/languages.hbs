@@ -13,6 +13,35 @@
 			<em>{{fluency}}</em>
 		</div>
 		{{/if}}
+		{{#if motherTongue}}
+			{{else}}
+			 <table class="d-language-qualifications-table">
+      <colgroup span="2"></colgroup>
+      <colgroup span="2"></colgroup>
+      <colgroup span="2"></colgroup>
+      <tr>
+        <th colspan="2" scope="colgroup">understanding</th>
+        <th colspan="2" scope="colgroup">speaking</th>
+        <th scope="colgroup">writing</th>
+      </tr>
+      <tr>
+        <th scope="col">listening</th>
+        <th scope="col">reading</th>
+        <th scope="col">interaction</th>
+        <th scope="col">production</th>
+        <th scope="col"></th>
+      </tr>
+      <tbody>
+        <tr>
+          <td>{{qualifications.understanding.listening}}</td>
+          <td>{{qualifications.understanding.reading}}</td>
+          <td>{{qualifications.speaking.spokenInteraction}}/></td>
+          <td>{{qualifications.speaking.spokenProduction}}/></td>
+          <td>{{qualifications.writing}}</td>
+        </tr>
+      </tbody>
+    </table>
+		{{/if}}
 	</div>
 	{{/each}}
 </section>

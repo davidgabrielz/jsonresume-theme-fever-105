@@ -52,3 +52,21 @@ blockquote {
 	width: 50%;
 }
 
+.d-language-qualifications-table {
+	width: 100%;
+}
+.d-language-qualifications-table th, .d-language-qualifications-table td {
+	border: 1px solid;
+}
+.d-language-qualifications-table tbody td {
+	padding: 5px;
+	text-align: center;
+}
+
+.d-language-qualifications-table tbody td .v-select__selections input {
+	display: none;
+}
+
+.d-language-qualifications-table tbody td .v-select__selections .v-select__selection {
+	margin-left: 40%;
+}

@@ -40,11 +40,12 @@
 		</div>
 		{{/if}}
 		{{#if highlights.length}}
-		<ul class="highlights">
+		<div class="highlights">
 			{{#each highlights}}
-			<li>{{.}}</li>
+				<h3>{{title}}</h3>
+				<span>{{{description}}}</span>
 			{{/each}}
-		</ul>
+		</div>
 		{{/if}}
 	</div>
 	{{/each}}
